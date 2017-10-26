@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		47966165BACD8011E2893995 /* Pods_BabbleOn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FEA0E027FE0B12EFB87A8B9 /* Pods_BabbleOn.framework */; };
 		7B03BA951FA2641F00511F77 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B03BA941FA2641F00511F77 /* DataService.swift */; };
+		7B03BA971FA26C8500511F77 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B03BA961FA26C8500511F77 /* AuthVC.swift */; };
+		7B03BA991FA26C9200511F77 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B03BA981FA26C9200511F77 /* LoginVC.swift */; };
 		7B092ECC1FA2570000571C94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B092ECB1FA2570000571C94 /* AppDelegate.swift */; };
 		7B092ECE1FA2570000571C94 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B092ECD1FA2570000571C94 /* FirstViewController.swift */; };
 		7B092ED01FA2570000571C94 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B092ECF1FA2570000571C94 /* SecondViewController.swift */; };
@@ -22,6 +24,8 @@
 		072392171578CBEE3B6842AA /* Pods-BabbleOn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabbleOn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BabbleOn/Pods-BabbleOn.debug.xcconfig"; sourceTree = "<group>"; };
 		455B6F0B0ADAE4600C0ADD90 /* Pods-BabbleOn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabbleOn.release.xcconfig"; path = "Pods/Target Support Files/Pods-BabbleOn/Pods-BabbleOn.release.xcconfig"; sourceTree = "<group>"; };
 		7B03BA941FA2641F00511F77 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		7B03BA961FA26C8500511F77 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
+		7B03BA981FA26C9200511F77 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		7B092EC81FA2570000571C94 /* BabbleOn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabbleOn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B092ECB1FA2570000571C94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B092ECD1FA2570000571C94 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +101,8 @@
 		7B092EDF1FA257D500571C94 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7B03BA961FA26C8500511F77 /* AuthVC.swift */,
+				7B03BA981FA26C9200511F77 /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -282,7 +288,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B03BA971FA26C8500511F77 /* AuthVC.swift in Sources */,
 				7B092ED01FA2570000571C94 /* SecondViewController.swift in Sources */,
+				7B03BA991FA26C9200511F77 /* LoginVC.swift in Sources */,
 				7B092ECC1FA2570000571C94 /* AppDelegate.swift in Sources */,
 				7B092ECE1FA2570000571C94 /* FirstViewController.swift in Sources */,
 				7B03BA951FA2641F00511F77 /* DataService.swift in Sources */,
