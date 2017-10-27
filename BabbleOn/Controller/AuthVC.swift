@@ -13,9 +13,19 @@ class AuthVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
 
+    @IBAction func loginWithFacebookBtnPressed(_ sender: Any) {
+        
+    }
     
-
+    @IBAction func loginWithGooglePlusBtnPressed(_ sender: Any) {
+        
+    }
+    
+    @IBAction func loginWithEmailBtnPressed(_ sender: Any) {
+        let loginVC = storyboard?.instantiateViewController(withIdentifier: Identifiers.loginVC.rawValue) as? LoginVC
+        present(loginVC!, animated: true, completion: nil)
+    }
 }

@@ -95,8 +95,6 @@
 				7B092EE01FA257DC00571C94 /* View */,
 				7B092EDF1FA257D500571C94 /* Controller */,
 				7B092ECB1FA2570000571C94 /* AppDelegate.swift */,
-				7B092ECD1FA2570000571C94 /* FeedVC.swift */,
-				7B092ECF1FA2570000571C94 /* GroupsVC.swift */,
 				7B092ED11FA2570000571C94 /* Main.storyboard */,
 				7B092ED41FA2570000571C94 /* Assets.xcassets */,
 				7B092ED61FA2570000571C94 /* LaunchScreen.storyboard */,
@@ -110,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				7B03BA961FA26C8500511F77 /* AuthVC.swift */,
+				7B092ECD1FA2570000571C94 /* FeedVC.swift */,
+				7B092ECF1FA2570000571C94 /* GroupsVC.swift */,
 				7B03BA981FA26C9200511F77 /* LoginVC.swift */,
 			);
 			path = Controller;
