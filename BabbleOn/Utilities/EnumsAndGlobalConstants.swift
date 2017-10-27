@@ -14,12 +14,16 @@ enum Identifiers: String {
     case feedVC = "FeedVC"
     case groupsVC = "GroupsVC"
     case myProfileVC = "MyProfileVC"
+    case createPostVC = "CreatePostVC"
     case feedCell = "feedCell"
     case groupsCell = "groupsCell"
     case myProfileCell = "myProfileCell"
+    case segueCreatePostVC = "segueCreatePostVC"
 }
 
 enum DatabaseKeys: String {
     case provider = "provider"
     case email = "email"
+    case content = "content"
+    case senderId = "senderId"
 }

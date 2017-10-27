@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13528" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13526"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -35,6 +36,7 @@
                                         <state key="normal" image="compose"/>
                                         <connections>
                                             <action selector="composeBtnWasPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="ioE-pV-V0F"/>
+                                            <segue destination="Nee-tK-p0R" kind="presentation" identifier="segueCreatePostVC" id="W7F-IZ-RlN"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_feed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TzM-Pr-X17">
@@ -88,6 +90,112 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
+        </scene>
+        <!--Create PostVC-->
+        <scene sceneID="ovX-Ll-esO">
+            <objects>
+                <viewController storyboardIdentifier="CreatePostVC" id="Nee-tK-p0R" customClass="CreatePostVC" customModule="BabbleOn" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RjM-rp-apA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WLS-cB-ayJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_postSomething" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SF5-xo-0wE">
+                                        <rect key="frame" x="84" y="24" width="208" height="32"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="27"/>
+                                        <color key="textColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YlY-zV-ru2">
+                                        <rect key="frame" x="15" y="20" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="B1C-IC-KII"/>
+                                            <constraint firstAttribute="width" constant="40" id="vjn-T8-h9K"/>
+                                        </constraints>
+                                        <state key="normal" image="close"/>
+                                        <connections>
+                                            <action selector="closeBtnWasPressed:" destination="Nee-tK-p0R" eventType="touchUpInside" id="RhA-J1-B84"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="YlY-zV-ru2" firstAttribute="leading" secondItem="WLS-cB-ayJ" secondAttribute="leading" constant="15" id="AIc-Ch-5IJ"/>
+                                    <constraint firstItem="SF5-xo-0wE" firstAttribute="centerX" secondItem="WLS-cB-ayJ" secondAttribute="centerX" id="L4K-qd-vE5"/>
+                                    <constraint firstItem="YlY-zV-ru2" firstAttribute="centerY" secondItem="SF5-xo-0wE" secondAttribute="centerY" id="SRO-p3-2Ia"/>
+                                    <constraint firstAttribute="height" constant="80" id="eoW-S8-B3h"/>
+                                    <constraint firstItem="YlY-zV-ru2" firstAttribute="top" secondItem="WLS-cB-ayJ" secondAttribute="top" constant="20" id="fQs-MX-Tba"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cxB-vr-fbu">
+                                <rect key="frame" x="16" y="100" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="UZF-7c-up1"/>
+                                    <constraint firstAttribute="height" constant="60" id="jPG-aK-irr"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username@babbleOn.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hDw-Br-jBc">
+                                <rect key="frame" x="96" y="117.5" width="243" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="n0V-2x-5Xh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                <color key="textColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Say something here..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NBa-5W-ctZ">
+                                <rect key="frame" x="16" y="180" width="343" height="417"/>
+                                <color key="textColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XPG-Es-Ylf">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="V6I-2d-ySv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                <state key="normal" title="  SEND" image="send">
+                                    <color key="titleColor" red="0.30193039774894714" green="0.74849849939346313" blue="0.33211433887481689" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendBtnWasPressed:" destination="Nee-tK-p0R" eventType="touchUpInside" id="WKq-uA-A56"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="NBa-5W-ctZ" firstAttribute="leading" secondItem="RjM-rp-apA" secondAttribute="leadingMargin" id="0xi-Kg-N8y"/>
+                            <constraint firstAttribute="trailing" secondItem="XPG-Es-Ylf" secondAttribute="trailing" id="2o9-JF-3nk"/>
+                            <constraint firstItem="NBa-5W-ctZ" firstAttribute="trailing" secondItem="RjM-rp-apA" secondAttribute="trailingMargin" id="9Mh-DB-GFp"/>
+                            <constraint firstItem="cxB-vr-fbu" firstAttribute="top" secondItem="WLS-cB-ayJ" secondAttribute="bottom" constant="20" id="KZd-HW-RiF"/>
+                            <constraint firstItem="hDw-Br-jBc" firstAttribute="centerY" secondItem="cxB-vr-fbu" secondAttribute="centerY" id="Lek-iK-qJg"/>
+                            <constraint firstItem="WLS-cB-ayJ" firstAttribute="leading" secondItem="RjM-rp-apA" secondAttribute="leading" id="OY6-J7-0qB"/>
+                            <constraint firstItem="hDw-Br-jBc" firstAttribute="leading" secondItem="cxB-vr-fbu" secondAttribute="trailing" constant="20" id="T43-zM-ZJa"/>
+                            <constraint firstAttribute="trailing" secondItem="WLS-cB-ayJ" secondAttribute="trailing" id="VuB-kS-jn6"/>
+                            <constraint firstItem="WLS-cB-ayJ" firstAttribute="top" secondItem="RjM-rp-apA" secondAttribute="top" id="YZN-z4-7nM"/>
+                            <constraint firstAttribute="bottom" secondItem="XPG-Es-Ylf" secondAttribute="bottom" id="kZf-X0-5xn"/>
+                            <constraint firstItem="XPG-Es-Ylf" firstAttribute="top" secondItem="NBa-5W-ctZ" secondAttribute="bottom" constant="20" id="rdJ-Xw-7nJ"/>
+                            <constraint firstItem="XPG-Es-Ylf" firstAttribute="leading" secondItem="RjM-rp-apA" secondAttribute="leading" id="rfD-Xj-q9f"/>
+                            <constraint firstItem="NBa-5W-ctZ" firstAttribute="top" secondItem="cxB-vr-fbu" secondAttribute="bottom" constant="20" id="sCo-dH-lZ0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hDw-Br-jBc" secondAttribute="trailing" constant="20" id="zE3-Tg-yIR"/>
+                            <constraint firstItem="cxB-vr-fbu" firstAttribute="leading" secondItem="RjM-rp-apA" secondAttribute="leadingMargin" id="zfC-OU-mZn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ibF-SA-81O"/>
+                    </view>
+                    <connections>
+                        <outlet property="sendBtn" destination="XPG-Es-Ylf" id="ehJ-aT-G1H"/>
+                        <outlet property="textView" destination="NBa-5W-ctZ" id="vNd-bC-WHE"/>
+                        <outlet property="userImage" destination="cxB-vr-fbu" id="6P2-Xc-gMd"/>
+                        <outlet property="usernameLbl" destination="hDw-Br-jBc" id="vSS-js-GEQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nPS-4X-6Nj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1652" y="-321"/>
         </scene>
         <!--Groups-->
         <scene sceneID="wg7-f3-ORb">
@@ -225,7 +333,7 @@
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZ5-jg-BB3">
                                                 <rect key="frame" x="0.0" y="293" width="295" height="63"/>
-                                                <color key="backgroundColor" red="0.0" green="0.47258255879166672" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.30193039770000002" green="0.74849849940000002" blue="0.33211433889999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="17"/>
                                                 <state key="normal" title=" _byEmail" image="emailIcon">
                                                     <color key="titleColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -491,6 +599,7 @@
         <image name="loginBGImage" width="375" height="284"/>
         <image name="logoutIcon" width="19" height="21"/>
         <image name="me-tabIcon" width="25" height="25"/>
+        <image name="send" width="29" height="29"/>
     </resources>
     <color key="tintColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>
