@@ -12,3 +12,8 @@ enum StoryboardIdentifiers: String {
     case authVC = "AuthVC"
     case loginVC = "LoginVC"
 }
+
+enum DatabaseKeys: String {
+    case provider = "provider"
+    case email = "email"
+}

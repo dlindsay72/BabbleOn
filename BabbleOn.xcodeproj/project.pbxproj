@@ -21,6 +21,7 @@
 		7BFD7AD81FA282E100FC0EF3 /* EnumsAndGlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFD7AD71FA282E100FC0EF3 /* EnumsAndGlobalConstants.swift */; };
 		7BFD7ADA1FA2838300FC0EF3 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFD7AD91FA2838300FC0EF3 /* InsetTextField.swift */; };
 		7BFD7ADC1FA2877200FC0EF3 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFD7ADB1FA2877200FC0EF3 /* ShadowView.swift */; };
+		7BFD7ADE1FA2B51C00FC0EF3 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFD7ADD1FA2B51C00FC0EF3 /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		7BFD7AD71FA282E100FC0EF3 /* EnumsAndGlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumsAndGlobalConstants.swift; sourceTree = "<group>"; };
 		7BFD7AD91FA2838300FC0EF3 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
 		7BFD7ADB1FA2877200FC0EF3 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		7BFD7ADD1FA2B51C00FC0EF3 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		8FEA0E027FE0B12EFB87A8B9 /* Pods_BabbleOn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BabbleOn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				7B03BA941FA2641F00511F77 /* DataService.swift */,
+				7BFD7ADD1FA2B51C00FC0EF3 /* AuthService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				7BFD7ADA1FA2838300FC0EF3 /* InsetTextField.swift in Sources */,
 				7B03BA991FA26C9200511F77 /* LoginVC.swift in Sources */,
 				7B092ECC1FA2570000571C94 /* AppDelegate.swift in Sources */,
+				7BFD7ADE1FA2B51C00FC0EF3 /* AuthService.swift in Sources */,
 				7B092ECE1FA2570000571C94 /* FirstViewController.swift in Sources */,
 				7B03BA951FA2641F00511F77 /* DataService.swift in Sources */,
 			);
