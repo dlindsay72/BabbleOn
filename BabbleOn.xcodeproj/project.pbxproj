@@ -17,6 +17,7 @@
 		7B092ED31FA2570000571C94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B092ED11FA2570000571C94 /* Main.storyboard */; };
 		7B092ED51FA2570000571C94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B092ED41FA2570000571C94 /* Assets.xcassets */; };
 		7B092ED81FA2570000571C94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B092ED61FA2570000571C94 /* LaunchScreen.storyboard */; };
+		7B5CCDA61FA38BB000248EB7 /* MyProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5CCDA51FA38BB000248EB7 /* MyProfileVC.swift */; };
 		7BD3C77B1FA26103008CFD99 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BD3C77A1FA26103008CFD99 /* GoogleService-Info.plist */; };
 		7BFD7AD81FA282E100FC0EF3 /* EnumsAndGlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFD7AD71FA282E100FC0EF3 /* EnumsAndGlobalConstants.swift */; };
 		7BFD7ADA1FA2838300FC0EF3 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFD7AD91FA2838300FC0EF3 /* InsetTextField.swift */; };
@@ -38,6 +39,7 @@
 		7B092ED41FA2570000571C94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B092ED71FA2570000571C94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B092ED91FA2570000571C94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B5CCDA51FA38BB000248EB7 /* MyProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileVC.swift; sourceTree = "<group>"; };
 		7BD3C77A1FA26103008CFD99 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7BFD7AD71FA282E100FC0EF3 /* EnumsAndGlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumsAndGlobalConstants.swift; sourceTree = "<group>"; };
 		7BFD7AD91FA2838300FC0EF3 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				7B092ECD1FA2570000571C94 /* FeedVC.swift */,
 				7B092ECF1FA2570000571C94 /* GroupsVC.swift */,
 				7B03BA981FA26C9200511F77 /* LoginVC.swift */,
+				7B5CCDA51FA38BB000248EB7 /* MyProfileVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				7BFD7ADE1FA2B51C00FC0EF3 /* AuthService.swift in Sources */,
 				7B092ECE1FA2570000571C94 /* FeedVC.swift in Sources */,
 				7B03BA951FA2641F00511F77 /* DataService.swift in Sources */,
+				7B5CCDA61FA38BB000248EB7 /* MyProfileVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,8 +13,10 @@ enum Identifiers: String {
     case loginVC = "LoginVC"
     case feedVC = "FeedVC"
     case groupsVC = "GroupsVC"
+    case myProfileVC = "MyProfileVC"
     case feedCell = "feedCell"
     case groupsCell = "groupsCell"
+    case myProfileCell = "myProfileCell"
 }
 
 enum DatabaseKeys: String {
