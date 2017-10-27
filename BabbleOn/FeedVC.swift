@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  FeedVC.swift
 //  BabbleOn
 //
 //  Created by Dan Lindsay on 2017-10-26.
@@ -8,12 +8,20 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class FeedVC: UIViewController {
+    
+    @IBOutlet weak var tableView: UITableView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
+    
+    @IBAction func composeBtnWasPressed(_ sender: Any) {
+        
+    }
+    
 }
 

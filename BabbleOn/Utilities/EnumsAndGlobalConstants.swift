@@ -8,9 +8,13 @@
 
 import Foundation
 
-enum StoryboardIdentifiers: String {
+enum Identifiers: String {
     case authVC = "AuthVC"
     case loginVC = "LoginVC"
+    case feedVC = "FeedVC"
+    case groupsVC = "GroupsVC"
+    case feedCell = "feedCell"
+    case groupsCell = "groupsCell"
 }
 
 enum DatabaseKeys: String {
