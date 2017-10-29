@@ -19,6 +19,7 @@
 		7B092ED81FA2570000571C94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B092ED61FA2570000571C94 /* LaunchScreen.storyboard */; };
 		7B5CCDA61FA38BB000248EB7 /* MyProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5CCDA51FA38BB000248EB7 /* MyProfileVC.swift */; };
 		7B941E181FA3A6CB00B8686B /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B941E171FA3A6CB00B8686B /* CreatePostVC.swift */; };
+		7BCAB3E11FA558FA008017BA /* UIView-Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCAB3E01FA558FA008017BA /* UIView-Ext.swift */; };
 		7BD3C77B1FA26103008CFD99 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BD3C77A1FA26103008CFD99 /* GoogleService-Info.plist */; };
 		7BFD7AD81FA282E100FC0EF3 /* EnumsAndGlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFD7AD71FA282E100FC0EF3 /* EnumsAndGlobalConstants.swift */; };
 		7BFD7ADA1FA2838300FC0EF3 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFD7AD91FA2838300FC0EF3 /* InsetTextField.swift */; };
@@ -42,6 +43,7 @@
 		7B092ED91FA2570000571C94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B5CCDA51FA38BB000248EB7 /* MyProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileVC.swift; sourceTree = "<group>"; };
 		7B941E171FA3A6CB00B8686B /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
+		7BCAB3E01FA558FA008017BA /* UIView-Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-Ext.swift"; sourceTree = "<group>"; };
 		7BD3C77A1FA26103008CFD99 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7BFD7AD71FA282E100FC0EF3 /* EnumsAndGlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumsAndGlobalConstants.swift; sourceTree = "<group>"; };
 		7BFD7AD91FA2838300FC0EF3 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 		7B4A56321FA25F8400DBD466 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				7BCAB3E01FA558FA008017BA /* UIView-Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BCAB3E11FA558FA008017BA /* UIView-Ext.swift in Sources */,
 				7BFD7ADC1FA2877200FC0EF3 /* ShadowView.swift in Sources */,
 				7B03BA971FA26C8500511F77 /* AuthVC.swift in Sources */,
 				7B092ED01FA2570000571C94 /* GroupsVC.swift in Sources */,
