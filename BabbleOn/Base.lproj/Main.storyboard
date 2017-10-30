@@ -114,7 +114,7 @@
                                         <connections>
                                             <outlet property="contentLbl" destination="PfM-xG-7xb" id="LQ4-B2-t0I"/>
                                             <outlet property="profileImage" destination="dsH-Cw-phV" id="Nkr-pp-6PH"/>
-                                            <outlet property="userEmailLbl" destination="RQM-GB-P5z" id="GmN-kZ-A1M"/>
+                                            <outlet property="userEmailLbl" destination="m2f-x1-Xw2" id="kJ7-Vm-4gy"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

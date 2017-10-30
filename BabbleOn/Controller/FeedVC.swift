@@ -12,10 +12,22 @@ class FeedVC: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    //MARK: - Properties
+    var messageArray = [Message]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        DataService.instance.getAllMessages { (returnedMessagesArray) in
+            self.messageArray = returnedMessagesArray
+            self.tableView.reloadData()
+        }
     }
     
     
@@ -23,5 +35,27 @@ class FeedVC: UIViewController {
         
     }
     
+}
+
+//MARK: - UITableViewDataSource, UITableViewDelegate
+extension FeedVC: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: Identifiers.feedCell.rawValue, for: indexPath) as? FeedCell else {
+            return UITableViewCell()
+        }
+        let image = UIImage(named: "defaultProfileImage")
+        let message = messageArray[indexPath.row]
+        cell.configureCell(profileImage: image!, email: message.senderId, content: message.content)
+        
+        return cell
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return messageArray.count
+    }
 }
 

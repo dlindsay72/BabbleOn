@@ -26,6 +26,7 @@
 		7BFD7ADA1FA2838300FC0EF3 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFD7AD91FA2838300FC0EF3 /* InsetTextField.swift */; };
 		7BFD7ADC1FA2877200FC0EF3 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFD7ADB1FA2877200FC0EF3 /* ShadowView.swift */; };
 		7BFD7ADE1FA2B51C00FC0EF3 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFD7ADD1FA2B51C00FC0EF3 /* AuthService.swift */; };
+		7BFDAC001FA77448008C8397 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFDABFF1FA77448008C8397 /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		7BFD7AD91FA2838300FC0EF3 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
 		7BFD7ADB1FA2877200FC0EF3 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		7BFD7ADD1FA2B51C00FC0EF3 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		7BFDABFF1FA77448008C8397 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		8FEA0E027FE0B12EFB87A8B9 /* Pods_BabbleOn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BabbleOn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -138,6 +140,7 @@
 		7B092EE11FA257E200571C94 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7BFDABFF1FA77448008C8397 /* Message.swift */,
 			);
 			name = Model;
 			path = "New Group";
@@ -324,6 +327,7 @@
 				7BFD7ADE1FA2B51C00FC0EF3 /* AuthService.swift in Sources */,
 				7B941E181FA3A6CB00B8686B /* CreatePostVC.swift in Sources */,
 				7B092ECE1FA2570000571C94 /* FeedVC.swift in Sources */,
+				7BFDAC001FA77448008C8397 /* Message.swift in Sources */,
 				7B03BA951FA2641F00511F77 /* DataService.swift in Sources */,
 				7B5CCDA61FA38BB000248EB7 /* MyProfileVC.swift in Sources */,
 			);
