@@ -19,6 +19,9 @@ class CreateGroupVC: UIViewController {
     @IBOutlet weak var doneBtn: UIButton!
     @IBOutlet weak var groupMemberLbl: UILabel!
     
+    //MARK: - Properties
+    var emailArray = [String]()
+    
     //MARK: - Main Methods
     
     override func viewDidLoad() {
@@ -26,7 +29,22 @@ class CreateGroupVC: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+        enterEmailTextField.delegate = self
+        enterEmailTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
 
+    }
+    
+    //MARK: - Custom Methods
+    @objc func textFieldDidChange() {
+        if enterEmailTextField.text == "" {
+            emailArray = []
+            tableView.reloadData()
+        } else {
+            DataService.instance.getEmail(forSearchQuery: enterEmailTextField.text!, handler: { (returnedEmailArray) in
+                self.emailArray = returnedEmailArray
+                self.tableView.reloadData()
+            })
+        }
     }
     
     //MARK: - IBActions
@@ -48,7 +66,7 @@ extension CreateGroupVC: UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
         let profileImage = UIImage(named: "defaultProfileImage")
-        cell.configureCell(profileImage: profileImage!, email: "jimbojangle@booze.com", isSelected: true)
+        cell.configureCell(profileImage: profileImage!, email: emailArray[indexPath.row], isSelected: true)
         cell.changeSelectedBackgroundColor()
         cell.emailLbl.highlightedTextColor = #colorLiteral(red: 0.1679556072, green: 0.6836873889, blue: 0.7895566821, alpha: 1)
         
@@ -60,8 +78,13 @@ extension CreateGroupVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return emailArray.count
     }
+}
+
+//MARK: - UITextFieldDelegate
+extension CreateGroupVC: UITextFieldDelegate {
+    
 }
 
 

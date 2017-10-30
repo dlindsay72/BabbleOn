@@ -20,7 +20,6 @@ class UserCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         
-        
     }
     
     func configureCell(profileImage image: UIImage, email: String, isSelected: Bool) {
