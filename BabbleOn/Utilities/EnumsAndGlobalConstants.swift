@@ -15,9 +15,11 @@ enum Identifiers: String {
     case groupsVC = "GroupsVC"
     case myProfileVC = "MyProfileVC"
     case createPostVC = "CreatePostVC"
+    case createGroupVC = "CreateGroupVC"
     case feedCell = "feedCell"
     case groupsCell = "groupsCell"
     case myProfileCell = "myProfileCell"
+    case createGroupCell = "createGroupCell"
     case segueCreatePostVC = "segueCreatePostVC"
 }
 

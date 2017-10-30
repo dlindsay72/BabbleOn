@@ -14,6 +14,9 @@
             <string>AmericanTypewriter</string>
             <string>AmericanTypewriter-Semibold</string>
         </array>
+        <array key="GillSans.ttc">
+            <string>GillSans-Bold</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Feed-->
@@ -40,8 +43,8 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_feed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TzM-Pr-X17">
-                                        <rect key="frame" x="153" y="24.5" width="69.5" height="32.5"/>
-                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="28"/>
+                                        <rect key="frame" x="156.5" y="25.5" width="62" height="29"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="25"/>
                                         <color key="textColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -153,8 +156,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_postSomething" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SF5-xo-0wE">
-                                        <rect key="frame" x="84" y="24" width="208" height="32"/>
-                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="27"/>
+                                        <rect key="frame" x="92" y="26" width="192.5" height="29"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="25"/>
                                         <color key="textColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -259,8 +262,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_groups" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcO-bL-Fcl">
-                                        <rect key="frame" x="134" y="24" width="107" height="32.5"/>
-                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="28"/>
+                                        <rect key="frame" x="140" y="26" width="95.5" height="29"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="25"/>
                                         <color key="textColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -270,9 +273,10 @@
                                             <constraint firstAttribute="width" constant="40" id="VHJ-uO-2gG"/>
                                             <constraint firstAttribute="height" constant="40" id="ke4-L3-eR2"/>
                                         </constraints>
-                                        <state key="normal" image="addUserToGroup"/>
+                                        <state key="normal" image="addNewIcon"/>
                                         <connections>
                                             <action selector="addToGroupBtnWasPressed:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="8PV-Lz-3v4"/>
+                                            <segue destination="46S-zo-ALq" kind="presentation" id="S7k-fQ-5rV"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -320,6 +324,156 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
+        </scene>
+        <!--Create GroupVC-->
+        <scene sceneID="sXz-01-6G9">
+            <objects>
+                <viewController storyboardIdentifier="CreateGroupVC" id="46S-zo-ALq" customClass="CreateGroupVC" customModule="BabbleOn" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nIM-QB-4Nq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oy2-rz-9g5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_createGroup" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gy-aA-BLQ">
+                                        <rect key="frame" x="113.5" y="26.5" width="149.5" height="27"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="23"/>
+                                        <color key="textColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Amx-UU-Lit">
+                                        <rect key="frame" x="300" y="20" width="60" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="peq-XD-SJf"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="yZj-IS-rDQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="18"/>
+                                        <state key="normal" title="DONE">
+                                            <color key="titleColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="doneBtnWasPressed:" destination="46S-zo-ALq" eventType="touchUpInside" id="jLt-KI-4eB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQ7-yc-2oE">
+                                        <rect key="frame" x="15" y="20" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="eA3-kv-e5K"/>
+                                            <constraint firstAttribute="height" constant="40" id="v1z-Ji-wxO"/>
+                                        </constraints>
+                                        <state key="normal" image="close"/>
+                                        <connections>
+                                            <action selector="closeBtnWasPressed:" destination="46S-zo-ALq" eventType="touchUpInside" id="hOy-Wd-3C4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="5gy-aA-BLQ" firstAttribute="centerX" secondItem="Oy2-rz-9g5" secondAttribute="centerX" id="6th-lA-Lsy"/>
+                                    <constraint firstItem="Amx-UU-Lit" firstAttribute="centerY" secondItem="kQ7-yc-2oE" secondAttribute="centerY" id="JDM-kG-XnR"/>
+                                    <constraint firstItem="kQ7-yc-2oE" firstAttribute="leading" secondItem="Oy2-rz-9g5" secondAttribute="leading" constant="15" id="NpY-lu-9Rt"/>
+                                    <constraint firstItem="Amx-UU-Lit" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Oy2-rz-9g5" secondAttribute="leading" constant="20" symbolic="YES" id="Oga-Yj-RHs"/>
+                                    <constraint firstItem="Amx-UU-Lit" firstAttribute="top" secondItem="Oy2-rz-9g5" secondAttribute="top" constant="20" id="WaG-8Y-G2v"/>
+                                    <constraint firstItem="kQ7-yc-2oE" firstAttribute="top" secondItem="Oy2-rz-9g5" secondAttribute="top" constant="20" id="dAT-BM-AZN"/>
+                                    <constraint firstAttribute="trailing" secondItem="Amx-UU-Lit" secondAttribute="trailing" constant="15" id="jh1-wR-Xym"/>
+                                    <constraint firstAttribute="height" constant="80" id="pPx-Ge-25i"/>
+                                    <constraint firstItem="Amx-UU-Lit" firstAttribute="centerY" secondItem="5gy-aA-BLQ" secondAttribute="centerY" id="x67-RW-kz5"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Z8d-lV-Qjd">
+                                <rect key="frame" x="16" y="100" width="343" height="547"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fW9-4E-pC3">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="18.5"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="16"/>
+                                        <color key="textColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="give your group a title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xYY-VI-hDG" customClass="InsetTextField" customModule="BabbleOn" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="25.5" width="343" height="40"/>
+                                        <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="efw-Ks-PBo"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7z-xb-x0K">
+                                        <rect key="frame" x="0.0" y="72.5" width="343" height="18.5"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="16"/>
+                                        <color key="textColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="give your group a description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1HW-Ld-Sd8" customClass="InsetTextField" customModule="BabbleOn" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="98" width="343" height="40"/>
+                                        <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="O3F-5d-HGZ"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_addPeopleToYourGroup" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9B0-Af-9ew">
+                                        <rect key="frame" x="0.0" y="145" width="343" height="18.5"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="16"/>
+                                        <color key="textColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="enter an email..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QF5-UV-FOO" customClass="InsetTextField" customModule="BabbleOn" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="170.5" width="343" height="60"/>
+                                        <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="xL3-0F-b63"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Tvi-iz-Lze">
+                                        <rect key="frame" x="0.0" y="237.5" width="343" height="309.5"/>
+                                        <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="createGroupCell" rowHeight="50" id="R7v-eb-4RB">
+                                                <rect key="frame" x="0.0" y="28" width="343" height="50"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="R7v-eb-4RB" id="VVx-iN-LHU">
+                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="Z8d-lV-Qjd" secondAttribute="bottom" constant="20" id="77D-Lb-pI7"/>
+                            <constraint firstItem="Z8d-lV-Qjd" firstAttribute="top" secondItem="Oy2-rz-9g5" secondAttribute="bottom" constant="20" id="9xs-IB-h0o"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Z8d-lV-Qjd" secondAttribute="trailing" id="H0B-W3-oqR"/>
+                            <constraint firstAttribute="trailing" secondItem="Oy2-rz-9g5" secondAttribute="trailing" id="Rrl-K4-cfA"/>
+                            <constraint firstItem="Oy2-rz-9g5" firstAttribute="top" secondItem="nIM-QB-4Nq" secondAttribute="top" id="fjm-eM-uoC"/>
+                            <constraint firstItem="Z8d-lV-Qjd" firstAttribute="leading" secondItem="nIM-QB-4Nq" secondAttribute="leadingMargin" id="xSL-Jx-sgD"/>
+                            <constraint firstItem="Oy2-rz-9g5" firstAttribute="leading" secondItem="nIM-QB-4Nq" secondAttribute="leading" id="zqs-F1-t0Q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TP1-g7-lL9"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionTextField" destination="1HW-Ld-Sd8" id="Sck-NE-9oJ"/>
+                        <outlet property="doneBtn" destination="Amx-UU-Lit" id="fTG-ly-2qq"/>
+                        <outlet property="enterEmailTextField" destination="QF5-UV-FOO" id="8VJ-Wr-U6Q"/>
+                        <outlet property="groupMemberLbl" destination="9B0-Af-9ew" id="GfB-LF-IIl"/>
+                        <outlet property="tableView" destination="Tvi-iz-Lze" id="jl1-2b-PgC"/>
+                        <outlet property="titleTextField" destination="xYY-VI-hDG" id="fo4-i3-JnE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xkq-wY-0YX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1637.5999999999999" y="365.66716641679164"/>
         </scene>
         <!--AuthVC-->
         <scene sceneID="y3h-IS-lQq">
@@ -639,7 +793,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="addUserToGroup" width="19" height="22"/>
+        <image name="addNewIcon" width="19" height="19"/>
         <image name="close" width="21" height="20"/>
         <image name="compose" width="21" height="24"/>
         <image name="defaultProfileImage" width="102" height="102"/>
