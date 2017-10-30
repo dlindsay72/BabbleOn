@@ -10,11 +10,15 @@ import UIKit
 
 class FeedVC: UIViewController {
     
+    //MARK: - IBOutlets
+    
     @IBOutlet weak var tableView: UITableView!
     
     //MARK: - Properties
     var messageArray = [Message]()
 
+    //MARK: - Main Methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,6 +34,7 @@ class FeedVC: UIViewController {
         }
     }
     
+    //MARK: - IBActions
     
     @IBAction func composeBtnWasPressed(_ sender: Any) {
         
@@ -40,7 +45,7 @@ class FeedVC: UIViewController {
 //MARK: - UITableViewDataSource, UITableViewDelegate
 extension FeedVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: Identifiers.feedCell.rawValue, for: indexPath) as? FeedCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: Identifiers.feedCell.rawValue) as? FeedCell else {
             return UITableViewCell()
         }
         let image = UIImage(named: "defaultProfileImage")
@@ -48,6 +53,9 @@ extension FeedVC: UITableViewDelegate, UITableViewDataSource {
         
         DataService.instance.getUsername(forUID: message.senderId) { (returnedUsername) in
             cell.configureCell(profileImage: image!, email: returnedUsername, content: message.content)
+            cell.changeSelectedBackgroundColor()
+            cell.contentLbl.highlightedTextColor = #colorLiteral(red: 0.1679556072, green: 0.6836873889, blue: 0.7895566821, alpha: 1)
+            cell.userEmailLbl.highlightedTextColor = #colorLiteral(red: 0.1679556072, green: 0.6836873889, blue: 0.7895566821, alpha: 1)
         }
         
         return cell

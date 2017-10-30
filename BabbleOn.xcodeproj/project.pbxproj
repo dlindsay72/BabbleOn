@@ -18,7 +18,9 @@
 		7B092ED51FA2570000571C94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B092ED41FA2570000571C94 /* Assets.xcassets */; };
 		7B092ED81FA2570000571C94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B092ED61FA2570000571C94 /* LaunchScreen.storyboard */; };
 		7B5CCDA61FA38BB000248EB7 /* MyProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5CCDA51FA38BB000248EB7 /* MyProfileVC.swift */; };
+		7B89698C1FA7AEC500998EDB /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B89698B1FA7AEC500998EDB /* UserCell.swift */; };
 		7B941E181FA3A6CB00B8686B /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B941E171FA3A6CB00B8686B /* CreatePostVC.swift */; };
+		7B97CD4E1FA7B97900696918 /* UITableViewCell-Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B97CD4D1FA7B97900696918 /* UITableViewCell-Ext.swift */; };
 		7BCAB3E11FA558FA008017BA /* UIView-Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCAB3E01FA558FA008017BA /* UIView-Ext.swift */; };
 		7BCAB3E31FA561BF008017BA /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCAB3E21FA561BF008017BA /* FeedCell.swift */; };
 		7BD3C77B1FA26103008CFD99 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BD3C77A1FA26103008CFD99 /* GoogleService-Info.plist */; };
@@ -45,7 +47,9 @@
 		7B092ED71FA2570000571C94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B092ED91FA2570000571C94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B5CCDA51FA38BB000248EB7 /* MyProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileVC.swift; sourceTree = "<group>"; };
+		7B89698B1FA7AEC500998EDB /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		7B941E171FA3A6CB00B8686B /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
+		7B97CD4D1FA7B97900696918 /* UITableViewCell-Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell-Ext.swift"; sourceTree = "<group>"; };
 		7BCAB3E01FA558FA008017BA /* UIView-Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-Ext.swift"; sourceTree = "<group>"; };
 		7BCAB3E21FA561BF008017BA /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		7BD3C77A1FA26103008CFD99 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -136,6 +140,7 @@
 				7BFD7AD91FA2838300FC0EF3 /* InsetTextField.swift */,
 				7BFD7ADB1FA2877200FC0EF3 /* ShadowView.swift */,
 				7BCAB3E21FA561BF008017BA /* FeedCell.swift */,
+				7B89698B1FA7AEC500998EDB /* UserCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -170,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				7BCAB3E01FA558FA008017BA /* UIView-Ext.swift */,
+				7B97CD4D1FA7B97900696918 /* UITableViewCell-Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -322,6 +328,7 @@
 				7BFD7ADC1FA2877200FC0EF3 /* ShadowView.swift in Sources */,
 				7B03BA971FA26C8500511F77 /* AuthVC.swift in Sources */,
 				7B092ED01FA2570000571C94 /* GroupsVC.swift in Sources */,
+				7B89698C1FA7AEC500998EDB /* UserCell.swift in Sources */,
 				7BFD7AD81FA282E100FC0EF3 /* EnumsAndGlobalConstants.swift in Sources */,
 				7BFD7ADA1FA2838300FC0EF3 /* InsetTextField.swift in Sources */,
 				7B03BA991FA26C9200511F77 /* LoginVC.swift in Sources */,
@@ -331,6 +338,7 @@
 				7BFD7ADE1FA2B51C00FC0EF3 /* AuthService.swift in Sources */,
 				7B941E181FA3A6CB00B8686B /* CreatePostVC.swift in Sources */,
 				7B092ECE1FA2570000571C94 /* FeedVC.swift in Sources */,
+				7B97CD4E1FA7B97900696918 /* UITableViewCell-Ext.swift in Sources */,
 				7BFDAC001FA77448008C8397 /* Message.swift in Sources */,
 				7B03BA951FA2641F00511F77 /* DataService.swift in Sources */,
 				7B5CCDA61FA38BB000248EB7 /* MyProfileVC.swift in Sources */,

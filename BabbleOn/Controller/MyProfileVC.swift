@@ -11,11 +11,13 @@ import Firebase
 
 class MyProfileVC: UIViewController {
     
+    //MARK: - IBOutlets
     
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var userEmailLbl: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
+    //MARK: Main Methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +28,8 @@ class MyProfileVC: UIViewController {
         
         userEmailLbl.text = Auth.auth().currentUser?.email
     }
+    
+    //MARK: - IBActions
 
     @IBAction func logoutBtnWasPressed(_ sender: Any) {
         let logoutPopup = UIAlertController(title: "Logout?", message: "Are you sure you want to logout?", preferredStyle: .actionSheet)
@@ -41,6 +45,11 @@ class MyProfileVC: UIViewController {
         logoutPopup.addAction(logoutAction)
         present(logoutPopup, animated: true, completion: nil)
     }
-    
-
 }
+
+
+
+
+
+
+

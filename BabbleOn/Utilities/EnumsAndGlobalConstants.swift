@@ -19,7 +19,7 @@ enum Identifiers: String {
     case feedCell = "feedCell"
     case groupsCell = "groupsCell"
     case myProfileCell = "myProfileCell"
-    case createGroupCell = "createGroupCell"
+    case userCell = "userCell"
     case segueCreatePostVC = "segueCreatePostVC"
 }
 
@@ -29,3 +29,5 @@ enum DatabaseKeys: String {
     case content = "content"
     case senderId = "senderId"
 }
+
+

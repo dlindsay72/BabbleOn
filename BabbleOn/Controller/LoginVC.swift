@@ -11,9 +11,12 @@ import Firebase
 
 class LoginVC: UIViewController {
     
+    //MARK: - IBOutlets
     
     @IBOutlet weak var emailTextField: InsetTextField!
     @IBOutlet weak var passwordTextField: InsetTextField!
+    
+    //MARK: - Main Methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +24,8 @@ class LoginVC: UIViewController {
         emailTextField.delegate = self
         passwordTextField.delegate = self
     }
+    
+    //MARK: - IBActions
     
     @IBAction func signinBtnWasPressed(_ sender: Any) {
         if emailTextField.text != nil && passwordTextField.text != nil {

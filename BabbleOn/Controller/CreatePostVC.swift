@@ -11,12 +11,14 @@ import Firebase
 
 class CreatePostVC: UIViewController {
     
+    //MARK: - IBOutlets
     
     @IBOutlet weak var userImage: UIImageView!
     @IBOutlet weak var usernameLbl: UILabel!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var sendBtn: UIButton!
     
+    //MARK: - Main Methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +32,8 @@ class CreatePostVC: UIViewController {
         
         usernameLbl.text = Auth.auth().currentUser?.email
     }
+    
+    //MARK: - IBActions
 
     @IBAction func closeBtnWasPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
@@ -51,10 +55,8 @@ class CreatePostVC: UIViewController {
             } else {
                 print("unable to get current user uid")
             }
-            
         }
     }
-    
 }
 
 //MARK: - UITextViewDelegate
