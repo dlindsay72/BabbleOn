@@ -24,6 +24,12 @@ class CreatePostVC: UIViewController {
         textView.delegate = self
         sendBtn.bindToKeyboard()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        usernameLbl.text = Auth.auth().currentUser?.email
+    }
 
     @IBAction func closeBtnWasPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
