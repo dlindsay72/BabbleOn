@@ -22,6 +22,7 @@
 		7B941E181FA3A6CB00B8686B /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B941E171FA3A6CB00B8686B /* CreatePostVC.swift */; };
 		7B97CD4E1FA7B97900696918 /* UITableViewCell-Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B97CD4D1FA7B97900696918 /* UITableViewCell-Ext.swift */; };
 		7BABB82B1FA8D92E00497EEC /* GroupsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BABB82A1FA8D92E00497EEC /* GroupsCell.swift */; };
+		7BABB82D1FA8E28800497EEC /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BABB82C1FA8E28800497EEC /* Group.swift */; };
 		7BCAB3E11FA558FA008017BA /* UIView-Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCAB3E01FA558FA008017BA /* UIView-Ext.swift */; };
 		7BCAB3E31FA561BF008017BA /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCAB3E21FA561BF008017BA /* FeedCell.swift */; };
 		7BD3C77B1FA26103008CFD99 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BD3C77A1FA26103008CFD99 /* GoogleService-Info.plist */; };
@@ -52,6 +53,7 @@
 		7B941E171FA3A6CB00B8686B /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
 		7B97CD4D1FA7B97900696918 /* UITableViewCell-Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell-Ext.swift"; sourceTree = "<group>"; };
 		7BABB82A1FA8D92E00497EEC /* GroupsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsCell.swift; sourceTree = "<group>"; };
+		7BABB82C1FA8E28800497EEC /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		7BCAB3E01FA558FA008017BA /* UIView-Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-Ext.swift"; sourceTree = "<group>"; };
 		7BCAB3E21FA561BF008017BA /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		7BD3C77A1FA26103008CFD99 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				7BFDABFF1FA77448008C8397 /* Message.swift */,
+				7BABB82C1FA8E28800497EEC /* Group.swift */,
 			);
 			name = Model;
 			path = "New Group";
@@ -330,6 +333,7 @@
 				7BCAB3E11FA558FA008017BA /* UIView-Ext.swift in Sources */,
 				7BFD7ADC1FA2877200FC0EF3 /* ShadowView.swift in Sources */,
 				7B03BA971FA26C8500511F77 /* AuthVC.swift in Sources */,
+				7BABB82D1FA8E28800497EEC /* Group.swift in Sources */,
 				7B092ED01FA2570000571C94 /* GroupsVC.swift in Sources */,
 				7B89698C1FA7AEC500998EDB /* UserCell.swift in Sources */,
 				7BFD7AD81FA282E100FC0EF3 /* EnumsAndGlobalConstants.swift in Sources */,

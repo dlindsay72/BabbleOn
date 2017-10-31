@@ -112,6 +112,28 @@ class DataService {
         //may have to use the completion to handle any errors
     }
     
+    func getAllGroups(handler: @escaping (_ groupsArray: [Group]) -> ()) {
+        var groupsArray = [Group]()
+        refGroups.observeSingleEvent(of: .value) { (groupSnapshot) in
+            guard let groupSnapshot = groupSnapshot.children.allObjects as? [DataSnapshot] else { return }
+            for group in groupSnapshot {
+                let memberArray = group.childSnapshot(forPath: DatabaseKeys.members.rawValue).value as! [String]
+                if let currentUserUID = Auth.auth().currentUser?.uid {
+                    if memberArray.contains(currentUserUID) {
+                        let title = group.childSnapshot(forPath: DatabaseKeys.title.rawValue).value as! String
+                        let description = group.childSnapshot(forPath: DatabaseKeys.description.rawValue).value as! String
+                        
+                        let group = Group(groupTitle: title, groupDescription: description, key: group.key, memberCount: memberArray.count, members: memberArray)
+                        groupsArray.append(group)
+                    }
+                } else {
+                    print("Could not get current user uid")
+                }
+            }
+            handler(groupsArray)
+        }
+    }
+    
 }
 
 
