@@ -28,6 +28,9 @@ enum DatabaseKeys: String {
     case email = "email"
     case content = "content"
     case senderId = "senderId"
+    case title = "title"
+    case description = "description"
+    case members = "members"
 }
 
 
