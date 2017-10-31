@@ -846,7 +846,7 @@
         <!--Group FeedVC-->
         <scene sceneID="mMw-e2-Dr1">
             <objects>
-                <viewController id="PSq-UP-nNB" customClass="GroupFeedVC" customModule="BabbleOn" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GroupFeedVC" id="PSq-UP-nNB" customClass="GroupFeedVC" customModule="BabbleOn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V6J-Wh-Dtb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

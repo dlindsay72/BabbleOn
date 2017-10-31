@@ -18,9 +18,29 @@ class GroupFeedVC: UIViewController {
     @IBOutlet weak var sendBtnView: UIView!
     @IBOutlet weak var sendBtn: UIButton!
     
+    var group: Group?
+    
+    func initData(forGroup group: Group) {
+        self.group = group
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         sendBtnView.bindToKeyboard()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        groupTitleLbl.text = group?.groupTitle
+        if let group = group {
+            DataService.instance.getEmailsFor(group: group) { (returnedEmails) in
+                self.groupMembersLbl.text = returnedEmails.joined(separator: ", ")
+            }
+        } else {
+            print("Unable to get group info")
+        }
+        
+        
     }
     
     @IBAction func sendBtnWasPressed(_ sender: Any) {
