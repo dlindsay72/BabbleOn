@@ -33,6 +33,7 @@ enum DatabaseKeys: String {
     case title = "title"
     case description = "description"
     case members = "members"
+    case messages = "messages"
 }
 
 

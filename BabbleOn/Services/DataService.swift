@@ -41,7 +41,12 @@ class DataService {
     
     func uploadPost(withMessage message: String, forUID uid: String, withGroupKey groupKey: String?, sendComplete: @escaping (_ status: Bool) -> ()) {
         if groupKey != nil {
-            // send to groups reference
+            if let groupKey = groupKey {
+                refGroups.child(groupKey).child(DatabaseKeys.messages.rawValue).childByAutoId().updateChildValues([DatabaseKeys.content.rawValue: message, DatabaseKeys.senderId.rawValue: uid])
+            } else {
+                print("Could not get the groupKey")
+            }
+            sendComplete(true)
         } else {
             refFeed.childByAutoId().updateChildValues([DatabaseKeys.content.rawValue: message, DatabaseKeys.senderId.rawValue: uid])
             sendComplete(true)
@@ -74,6 +79,21 @@ class DataService {
                     handler(user.childSnapshot(forPath: DatabaseKeys.email.rawValue).value as! String)
                 }
             }
+        }
+    }
+    
+    func getAllMessagesFor(desiredGroup: Group, handler: @escaping (_ messagesArray: [Message]) -> ()) {
+        var groupMessageArray = [Message]()
+        refGroups.child(desiredGroup.key).child(DatabaseKeys.messages.rawValue).observeSingleEvent(of: .value) { (groupMessageSnapshot) in
+            guard let groupMessageSnapshot = groupMessageSnapshot.children.allObjects as? [DataSnapshot] else { return }
+            for groupMessage in groupMessageSnapshot {
+                let content = groupMessage.childSnapshot(forPath: DatabaseKeys.content.rawValue).value as! String
+                let senderId = groupMessage.childSnapshot(forPath: DatabaseKeys.senderId.rawValue).value as! String
+                let groupMessage = Message(content: content, senderId: senderId)
+                
+                groupMessageArray.append(groupMessage)
+            }
+            handler(groupMessageArray)
         }
     }
     
