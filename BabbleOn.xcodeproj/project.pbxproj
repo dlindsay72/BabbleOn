@@ -28,6 +28,7 @@
 		7BCAB3E11FA558FA008017BA /* UIView-Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCAB3E01FA558FA008017BA /* UIView-Ext.swift */; };
 		7BCAB3E31FA561BF008017BA /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCAB3E21FA561BF008017BA /* FeedCell.swift */; };
 		7BD3C77B1FA26103008CFD99 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BD3C77A1FA26103008CFD99 /* GoogleService-Info.plist */; };
+		7BFABC651FA958C400490227 /* UIViewController-Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFABC641FA958C400490227 /* UIViewController-Ext.swift */; };
 		7BFD7AD81FA282E100FC0EF3 /* EnumsAndGlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFD7AD71FA282E100FC0EF3 /* EnumsAndGlobalConstants.swift */; };
 		7BFD7ADA1FA2838300FC0EF3 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFD7AD91FA2838300FC0EF3 /* InsetTextField.swift */; };
 		7BFD7ADC1FA2877200FC0EF3 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFD7ADB1FA2877200FC0EF3 /* ShadowView.swift */; };
@@ -61,6 +62,7 @@
 		7BCAB3E01FA558FA008017BA /* UIView-Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-Ext.swift"; sourceTree = "<group>"; };
 		7BCAB3E21FA561BF008017BA /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		7BD3C77A1FA26103008CFD99 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7BFABC641FA958C400490227 /* UIViewController-Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController-Ext.swift"; sourceTree = "<group>"; };
 		7BFD7AD71FA282E100FC0EF3 /* EnumsAndGlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumsAndGlobalConstants.swift; sourceTree = "<group>"; };
 		7BFD7AD91FA2838300FC0EF3 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
 		7BFD7ADB1FA2877200FC0EF3 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 			children = (
 				7BCAB3E01FA558FA008017BA /* UIView-Ext.swift */,
 				7B97CD4D1FA7B97900696918 /* UITableViewCell-Ext.swift */,
+				7BFABC641FA958C400490227 /* UIViewController-Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				7B973D971FA911B800A6B3CE /* GroupFeedCell.swift in Sources */,
 				7B97CD4E1FA7B97900696918 /* UITableViewCell-Ext.swift in Sources */,
 				7BFDAC001FA77448008C8397 /* Message.swift in Sources */,
+				7BFABC651FA958C400490227 /* UIViewController-Ext.swift in Sources */,
 				7B03BA951FA2641F00511F77 /* DataService.swift in Sources */,
 				7B5CCDA61FA38BB000248EB7 /* MyProfileVC.swift in Sources */,
 			);
