@@ -17,8 +17,7 @@ class GroupFeedVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var groupMembersLbl: UILabel!
     @IBOutlet weak var textField: InsetTextField!
-    @IBOutlet weak var sendBtnView: UIView!
-    @IBOutlet weak var sendBtn: UIButton!
+    @IBOutlet weak var textFieldStackView: UIStackView!
     
     //MARK: - Properties
     
@@ -33,13 +32,18 @@ class GroupFeedVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        sendBtnView.bindToKeyboard()
-//        sendBtn.bindToKeyboard()
-//        textField.bindToKeyboard()
+        textField.bindToKeyboard()
         tableView.delegate = self
         tableView.dataSource = self
+        textField.delegate = self
         
+        let tap = UITapGestureRecognizer(target: self, action: #selector(handleScreenTap(sender:)))
+        self.view.addGestureRecognizer(tap)
         
+    }
+    
+    @objc func handleScreenTap(sender: UITapGestureRecognizer) {
+        self.view.endEditing(true)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -70,17 +74,16 @@ class GroupFeedVC: UIViewController {
     @IBAction func sendBtnWasPressed(_ sender: Any) {
         if textField.text != "" {
             textField.isEnabled = false
-            sendBtn.isEnabled = false
             if let currentUserUID = Auth.auth().currentUser?.uid {
                 DataService.instance.uploadPost(withMessage: textField.text!, forUID: currentUserUID, withGroupKey: group?.key, sendComplete: { (complete) in
                     if complete {
                         self.textField.text = ""
                         self.textField.isEnabled = true
-                        self.sendBtn.isEnabled = true
                     }
                 })
             }
         }
+        print("we got here")
     }
     
     @IBAction func backBtnWasPressed(_ sender: Any) {
@@ -116,9 +119,12 @@ extension GroupFeedVC: UITableViewDelegate, UITableViewDataSource {
 }
 
 //MARK: - UITextFieldDelegate
-//extension GroupFeedVC: UITextFieldDelegate {
-//
-//}
+extension GroupFeedVC: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.textField.resignFirstResponder()
+        return true
+    }
+}
 
 
 
