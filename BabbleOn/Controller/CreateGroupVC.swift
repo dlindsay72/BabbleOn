@@ -39,9 +39,17 @@ class CreateGroupVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         doneBtn.isHidden = true
+        
+//        let tap = UITapGestureRecognizer(target: self, action: #selector(handleScreenTap(sender:)))
+//        self.view.addGestureRecognizer(tap)
     }
     
     //MARK: - Custom Methods
+    
+    @objc func handleScreenTap(sender: UITapGestureRecognizer) {
+        self.view.endEditing(true)
+    }
+    
     @objc func textFieldDidChange() {
         if enterEmailTextField.text == "" {
             emailArray = []
@@ -130,7 +138,10 @@ extension CreateGroupVC: UITableViewDelegate, UITableViewDataSource {
 
 //MARK: - UITextFieldDelegate
 extension CreateGroupVC: UITextFieldDelegate {
-    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        enterEmailTextField.resignFirstResponder()
+        return true
+    }
 }
 
 

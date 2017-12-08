@@ -9,5 +9,6 @@ target 'BabbleOn' do
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
+  pod 'JHTAlertController', '~> 0.2'
 
 end

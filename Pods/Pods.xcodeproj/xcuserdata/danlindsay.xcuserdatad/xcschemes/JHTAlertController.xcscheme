@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "51801059791659FBBB9BF80B0D995B58"
-               BuildableName = "Pods_BabbleOn.framework"
-               BlueprintName = "Pods-BabbleOn"
+               BlueprintIdentifier = "A275A35D4BF32CEF5B46DD3EAAC8EE31"
+               BuildableName = "JHTAlertController.framework"
+               BlueprintName = "JHTAlertController"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +47,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "51801059791659FBBB9BF80B0D995B58"
-            BuildableName = "Pods_BabbleOn.framework"
-            BlueprintName = "Pods-BabbleOn"
+            BlueprintIdentifier = "A275A35D4BF32CEF5B46DD3EAAC8EE31"
+            BuildableName = "JHTAlertController.framework"
+            BlueprintName = "JHTAlertController"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

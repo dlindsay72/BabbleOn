@@ -37,8 +37,8 @@ class GroupFeedVC: UIViewController {
         tableView.dataSource = self
         textField.delegate = self
         
-        let tap = UITapGestureRecognizer(target: self, action: #selector(handleScreenTap(sender:)))
-        self.view.addGestureRecognizer(tap)
+//        let tap = UITapGestureRecognizer(target: self, action: #selector(handleScreenTap(sender:)))
+//        self.view.addGestureRecognizer(tap)
         
     }
     
