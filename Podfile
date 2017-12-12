@@ -10,5 +10,9 @@ target 'BabbleOn' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'JHTAlertController', '~> 0.2'
+  pod 'GoogleSignIn'
+  pod 'FBSDKCoreKit'
+  pod 'FBSDKShareKit'
+  pod 'FBSDKLoginKit'
 
 end

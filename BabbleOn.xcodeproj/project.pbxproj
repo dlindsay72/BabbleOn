@@ -120,10 +120,6 @@
 				7B092EE11FA257E200571C94 /* Model */,
 				7B092EE01FA257DC00571C94 /* View */,
 				7B092EDF1FA257D500571C94 /* Controller */,
-				7B092ECB1FA2570000571C94 /* AppDelegate.swift */,
-				7B092ED11FA2570000571C94 /* Main.storyboard */,
-				7B092ED41FA2570000571C94 /* Assets.xcassets */,
-				7B092ED61FA2570000571C94 /* LaunchScreen.storyboard */,
 				7BD3C77A1FA26103008CFD99 /* GoogleService-Info.plist */,
 				7B092ED91FA2570000571C94 /* Info.plist */,
 			);
@@ -133,6 +129,7 @@
 		7B092EDF1FA257D500571C94 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7B092ECB1FA2570000571C94 /* AppDelegate.swift */,
 				7B03BA961FA26C8500511F77 /* AuthVC.swift */,
 				7B092ECD1FA2570000571C94 /* FeedVC.swift */,
 				7B092ECF1FA2570000571C94 /* GroupsVC.swift */,
@@ -154,6 +151,9 @@
 				7B89698B1FA7AEC500998EDB /* UserCell.swift */,
 				7BABB82A1FA8D92E00497EEC /* GroupsCell.swift */,
 				7B973D961FA911B800A6B3CE /* GroupFeedCell.swift */,
+				7B092ED11FA2570000571C94 /* Main.storyboard */,
+				7B092ED61FA2570000571C94 /* LaunchScreen.storyboard */,
+				7B092ED41FA2570000571C94 /* Assets.xcassets */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -281,9 +281,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BabbleOn/Pods-BabbleOn-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -297,6 +300,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BabbleOn/Pods-BabbleOn-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/JHTAlertController/JHTAlertController.framework",
@@ -305,6 +313,11 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JHTAlertController.framework",
